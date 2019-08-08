@@ -6,7 +6,8 @@ categories: Code
 
 ## RUST 
 
-Nationalism, religion, politics, identity... programming languages.  Tread carefully.  But, I wanted to take a peak at Rust, at least at a high-level, and make its case. Javascript aside, it's been a while since I threw things while coding, and it feels, oddly, good.        
+Nationalism, religion, politics, identity... programming languages.  Tread carefully.  But, I wanted to take a pekak at Rust, at least at a high-level, and make its case. Javascript aside,
+, it's been a while since I threw things while coding, and it feels, oddly, good.        
 
 ### | move | your but(t)s
 
@@ -15,18 +16,16 @@ Nationalism, religion, politics, identity... programming languages.  Tread caref
 - "Rust is hard."
 - "Insufficient libraries/packages to lean on..."
 
-{% highlight rust linenos %}
+If you dislike challenges, have found a comfort zone, view coding strictly as a trade, and want mountains of god-knows-what code to depend on... agreed, Rust is not for you. 
+
 OK(())
-{% endhighlight %}
 
 ### Rust Overview
 
 Rust is a programming language and ecosystem that generates native code with the support of a couple of libraries.  So, there's a runtime, of sorts, but only via those libraries. There's no garbage collection. Memory allocation in code is enforced by the *compiler* - so Rust helps you from doing stupid things.  There's some "normally" and "usually" required by the aforesaid, but onward! 
 
 
-## It's Fast 
-
-### It's Fast 
+### It's <s> Fast  </s>
 
 But... GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dotnet languages, python and many others are fast, or at least, fast enough.  Benchmarks are a bit like algorithms - best, average, worst cases - but here's one: <a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.html">benchmark</a> 
 
