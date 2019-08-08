@@ -15,12 +15,16 @@ Nationalism, religion, politics, identity... programming languages.  Tread caref
 - "Rust is hard."
 - "Insufficient libraries/packages to lean on..."
 
-OK
+{% highlight rust linenos %}
+OK(())
+{% endhighlight %}
 
 ### Rust Overview
 
 Rust is a programming language and ecosystem that generates native code with the support of a couple of libraries.  So, there's a runtime, of sorts, but only via those libraries. There's no garbage collection. Memory allocation in code is enforced by the *compiler* - so Rust helps you from doing stupid things.  There's some "normally" and "usually" required by the aforesaid, but onward! 
 
+
+## It's Fast 
 
 ### It's Fast 
 
