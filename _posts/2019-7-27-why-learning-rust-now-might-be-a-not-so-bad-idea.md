@@ -24,7 +24,7 @@ Rust is a programming language and ecosystem that generates native code with the
 
 ### It's Fast 
 
-But... GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dotnet languages, python and many others are fast, or at least, fast enough.  Benchmarks are a bit like algorithms - best, average, worst cases - but here's one: {https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.htmll   
+But... GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dotnet languages, python and many others are fast, or at least, fast enough.  Benchmarks are a bit like algorithms - best, average, worst cases - but here's one: <a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.html">benchmark</a> 
 
 ### Some great subheading (h3)
 
