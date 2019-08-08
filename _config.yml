@@ -2,7 +2,7 @@
 title: Blittable Types 
 description: >
   Easier to talk to... 
-baseurl: "/blittable.github.io" # should be / if you build a global github page (eg o0ignition0o.github.io)
+baseurl: "https://blittable.github.io" # should be / if you build a global github page (eg o0ignition0o.github.io)
 url: "https://blittable.github.io" # The blog url you want to choose (you can use a github.io one, or pick your own hosted url :))
 logo: "https://www.rust-lang.org/logos/rust-logo-64x64-blk.png" # This one is used as blog logo
 twitter_username: o0ignition0o # Your twitter handle
