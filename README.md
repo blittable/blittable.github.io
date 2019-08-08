@@ -1,103 +1,42 @@
-<h1 align="center">
-  <br>
-  <img src="/images/reverie-text.png" alt="Reverie" width="200">
-  <br>
-</h1>
+# RustLang Blog Boilerplate
 
-Reverie is a [Jekyll](https://jekyllrb.com/)-powered theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+This is the boilerplate code that allows you to quickly setup a blog that looks like the [RustLang blog].
+It can easily be run on [GitHub pages].
 
-> [Theme demo](https://www.amitmerchant.com/reverie/introducing-reverie-jekyll-theme/)
+This project has been forked from the awesome [GitHub repo] of the [RustLang blog].
 
-This is a plug-and-play Jekyll theme best suited to use on [GitHub Pages](https://pages.github.com) without even setting up a local environment.
+[RustLang blog]: https://blog.rust-lang.org/
+[GitHub repo]: https://github.com/rust-lang/blog.rust-lang.org
+[GitHub pages]: https://pages.github.com/
 
-![](/images/reverie-demo.png)
+## How to use it
 
-|  Responsiveness            |  Search | Categories |
-|---------------------|----------------------|----------------------|
-|![Responsiveness](/images/mobile-demo.png) | ![search](/images/search.png) | ![categories](/images/categories.png) |
+- [Fork the repository](https://help.github.com/articles/fork-a-repo/) to your own github account
+- [Clone your forked repository](https://help.github.com/articles/cloning-a-repository/)
+- Edit the [_config.yml](_config.yml) file to add your own information
+- Create a blog post in the _posts directory (or edit [the example blog post](2018-05-10-blog-boilerplate.md))
+- [Add your files, commit and push](http://guides.railsgirls.com/github) so your modifications are saved on github.com
+- [Setup github pages](https://pages.github.com/)
+- Send me a link to your blog and your first article, I'd love to read it ! :)
 
-## Features overview
+A deeper guide on how to setup a jekyll blog can be found [here](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/). I'll probably create one too if it helps.
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+The theme and layout can be found under _includes / _layouts _sass and / css.
 
-> <p><i>Like this theme?</i> Become a patreon to support my opensource work <p>
-> <a href="https://www.patreon.com/amitmerchant"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160"></a>
-
-## Using Reverie on GitHub Pages
-
-### 1. Fork Reverie to your User Repository
-
-Fork this repository, then rename the repository to `yourgithubusername.github.io`.
-
-Alternatively, you can use [`Use this template`](https://github.com/amitmerchant1990/reverie/generate) button if you want to create a repository with a clean commit history which will use Reverie as a template.
-
-Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2.
-
-### 2. Customize and view your site
-
-Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
-
-Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
-
-### 3. Publish your first blog post
-
-Create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
-
-> You can add additional posts in the browser on GitHub.com too! Just hit the <kbd>Create new file</kbd> button in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
-
-## Using Categories in Reverie
-
-You can categorize your content based on `categories` in Reverie. For this, you just need to add `categories` in front matter like below:
-
-For adding single category:
-
-```md
-categories: JavaScript
-```
-
-For adding multiple categories:
-
-```md
-categories: [PHP, Laravel]
-```
-
-The categorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
-
-## Pagination
-
-Pagination of posts in Reverie works out-of-the-box. You only need to specify number of posts you want on a single page in `_config.yml` and Reverie will take care of the rest.
-
-```yml
-paginate: 6
-```
-
-## RSS
-
-The generated [RSS feed](https://en.wikipedia.org/wiki/RSS) of your blog can be found at <https://yourgithubusername.github.io/feed>. You can see the example RSS feed over [here](https://www.amitmerchant.com/feed).
-
-## Sitemap
-
-The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap>. You can see the example sitemap feed over [here](https://www.amitmerchant.com/sitemap).
-
-## The name?
-
-reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><sup>/ˈrɛv(ə)ri/</sup> 
-
+The favicon is [here](favicon.ico).
 
 ## License
 
-MIT
+The Rust Programming Language Blog is primarily distributed under the terms of
+CC-BY 4.0. 
+So is this boilerplate.
+
+See [LICENSE](LICENSE) for details.
+
+## Code of conduct
+
+Any project I create and I take part of respects the [Rust Code of Conduct](CODE_OF_CONDUCT.md).
+
+If there is any issue send me a message and I will make sure the code is respected.
+
+Happy blogging and happy coding ! :)
