@@ -4,14 +4,13 @@ title: Why learning Rust now might not be a terrible idea
 categories: Code
 ---
 
-Nationalism, religion, identity... programming languages.  Tred carefully.    
-## Some great heading (h2)
+## RUST 
 
-About Rust.
+Nationalism, religion, politics, identity... programming languages.  Tread carefully.  But, I wanted to take a peak at Rust, at least at a high-level, and make its case. Javascript aside, it's been a while since I threw things while coding, and it feels, oddly, good.        
 
-## Another great heading (h2)
+## Move your but(t)s
 
-I already knew that, so...
+"But I can already do everything in language n, so..."
 
 ### Some great subheading (h3)
 
