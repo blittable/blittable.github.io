@@ -39,18 +39,26 @@ IMHO, benchmarks are a bit like algorithms - it kind of depends best, worst, ave
 Here's another: <a href="https://www.techempower.com/benchmarks/">web server response times.</a> 
 
 Having said that, GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dotnet languages, python and many others are fast, or at least, and more importantly, fast enough.  
+
 There *are* shining examples of where Rust's leading performance matter.  Here's a favorite tool built in Rust that you can use regardless of your preferred coding language:  a command line grep replacement:  <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>
+
 
 
 ### It's Memory Safe  
 --- 
 
 Buffer overflows, dangling pointers, null pointers... in Rust, these are 'handled' upstream at compile-time.  Or more fairly, the compiler's design mitigates the risk of code not explicitly marked as unsafe from exposing those vulnerabilities.  
+
 PA-DSS (mostly credit cards) auditors enjoy spilling application memory and picking through the contents.  
-Some security conscience persons in industry have recently noted precisely <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/"> that </a> The crypto/chain community has likewise taken notice, including Crypto-Com, Binance and Parity.  
+
+Some security conscience persons in industry have recently noted <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/"> that memory-safe makes sense for an OS.</a> 
+
+The crypto/chain community has likewise taken notice, including Crypto-Com, Binance and Parity.
+
 Baidu SDK's for Intel's SGX <a href="https://github.com/baidu/rust-sgx-sdk">uses Rust</a> to wrap the native libraries on the SDK.
 
-The point: Rust definitely buys you something here - and I had to pick a Rust hill to die on, this would be my choice.
+The point: Rust definitely buys you something here - and if I had to pick a Rust hill to die on, this would be my choice.
+
 
 
 ### Packaging, Runtimes, and libraries 
@@ -58,6 +66,8 @@ The point: Rust definitely buys you something here - and I had to pick a Rust hi
 
 The designers got it right. Halelujah, thank you.  Configurable runtimes, package naming, versioning, features, modules, references, etc.  It works as expected - it's dull and transparent. 
 Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> go modules</a> that article is too long.  Enough said.   
+
+
 
 
 ### Parallel Processing is Fearless, and with Rayon (a crate in Rust lingo) it's Crazy Easy
@@ -91,11 +101,14 @@ fn sum_of_squares(input: &[i32]) -> i32 {
 Wow.  Cool.
 
 
+
 ### The Documentation is Excellent 
 ---
 
 There's a learning curve, no doubt.  It takes some discipline, but going through the documentation, especially <a href="https://doc.rust-lang.org/book"> The Book</a> is a really good idea. 
+
 There's no unneeded formalism.  The content is linear.  There's little assumed about your background, but it doesn't pull punches on the more challenging content.  The writing is good.
+
 
 
 ### Getting Started - A Couple Suggestions
@@ -122,6 +135,7 @@ fn main() {
    );
 }
 {% endhighlight %}
+
 
 
 
