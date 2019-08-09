@@ -14,10 +14,10 @@ it's been a while since I threw things while coding, and it feels, oddly, good. 
 
 - "But I can already do everything in language X, so..."
 - "There are no Rust jobs..."
-- "Rust is hard."
-- "Rust doesn't have libraries/packages to lean on..."
+- "Rust is hard..."
+- "Rust doesn't have enough libraries/packages to lean on..."
 
-  OK(())
+  true, kinda true, kinda true, that depends... OK(())
 
 Before getting into some details, a couple points: 
 
