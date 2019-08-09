@@ -33,7 +33,8 @@ Having said that, GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dot
 ### It's Memory Safe  
 
 Buffer overflows, dangling pointers, null pointers... in Rust, these are 'handled' upstream at compile-time.  Or more fairly, the compiler's design mitigates the risk of code not explicitly marked as unsafe from exposing those vulnerabilities.  
-PA-DSS (mostly credit cards) auditors enjoy spilling application memory and picking through the contents.  Some security conscience persons in industry have recently noted precisely <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/"> that </a> The crypto/chain community has likewise taken notice, including Crypto-Com, Binance and Parity.  
+PA-DSS (mostly credit cards) auditors enjoy spilling application memory and picking through the contents.  
+Some security conscience persons in industry have recently noted precisely <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/"> that </a> The crypto/chain community has likewise taken notice, including Crypto-Com, Binance and Parity.  
 Baidu SDK's for Intel's SGX <a href="https://github.com/baidu/rust-sgx-sdk">uses Rust</a> to wrap the native libraries on the SDK.
 
 The point: Rust definitely buys you something here - and I had to pick a Rust hill to die on, this would be my choice.
@@ -41,7 +42,7 @@ The point: Rust definitely buys you something here - and I had to pick a Rust hi
 ### Packaging, Runtimes, and libraries 
 
 The designers got it right. Halelujah, thank you.  Configurable runtimes, package naming, versioning, features, modules, references, etc.  It works as expected - it's dull and transparent. 
-Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> is not where I want to spent my productive hours.</a>  
+Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> go modules</a> that article is too long.  Enough said.   
 
 ### Parallel Processing is Fearless, and with Rayon (a crate in Rust lingo) it's Crazy Easy
 
@@ -64,11 +65,79 @@ If I want to write code that utilizes multiple cores:
 use rayon::prelude::*;
 
 fn sum_of_squares(input: &[i32]) -> i32 {
-    input.<b>par_</b>iter() 
+    input.par_iter()  // <-- par_ is the difference 
          .map(|&i| i * i)
          .sum()
 }
 {% endhighlight %}
+
+Wow.  Cool.
+
+### The Documentation is Excellent 
+
+There's a learning curve, no doubt.  It takes some discipline, but going through the documentation, especially <a href="https://doc.rust-lang.org/book/is"> The Book</a> is a really good idea. 
+There's no unneeded formalism.  The content is linear.  There's little assumed about your background, but it doesn't pull punches on the more challenging content.  The writing is good.
+
+### Getting Started - A Couple Suggestions
+
+- Rust's rising star, in search, has yet to exceed the stuff you wire-brush off your grill.  So, qualify your searches for <a https://www.rust-lang.org/Rust> Rust</a>.
+- Follow the book in the beginning.  It pays dividends.  This is crazy unintuitive for experienced programmers - we have github - we know all sorts of loops and variables.  
+
+But, there's a main function:
+
+{% highlight rust %}
+fn main() {
+  println!("Hi");
+}
+
+{% endhighlight %}
+
+And a main function:
+
+{% highlight rust %}
+fn main() {
+   procmacro2::misc_syntax!(
+      where while abcd : u64 >> 1 + 2 * 3; where T: 'x + A<B='y+C+D>;[M];A::f
+   );
+}
+{% endhighlight %}
+
+### A Pinch More Motivation 
+
+- macros, generics, closures, concurrency and parallelism are features, but you can write tight Rust code without them. There's fun stuff to do without complete mastery of the language.
+- There are many excellent crates, too many to mention: but a top-ten, humorless, countdown:
+
+9  -   
+8  -  
+7  - <a href="https://github.com/rustsim/nalgebra"> nalgebra </a> - Linear algebra library and some eye-pleasing code 
+6  - <a href="https://github.com/BurntSushi/xsv"> xsv </a> - You'll never look at a csv file the same way again. 
+5  - <a href="https://docs.rs/crate/criterion/0.2.11"> Criterion </a> - statistical benchmarking library with intelligent function sampling and awesome charts/reporting.  
+4  - <a href="https://github.com/crossbeam-rs/crossbeam"> Crossbeam </a> - Concurrent programming primitives and tools     
+3  -  
+2  -   
+1  -  
+0  -   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
