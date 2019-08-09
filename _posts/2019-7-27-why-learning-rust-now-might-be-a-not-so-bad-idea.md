@@ -32,26 +32,45 @@ Having said that, GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dot
 
 ### It's Memory Safe  
 
-Buffer overflows, dangling pointers, null pointers... in Rust, these are 'handled' upstream at compile-time.  Or more fairly, the compiler's design mitigates the risk of code not explicitly marked as unsafe from exposing those vulnerabilities.  PA-DSS (mostly credit cards) auditors enjoy spilling application memory and picking through the contents.  Some security conscience persons in industry have recently noted precisely <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/"> that </a> The crypto/chain community has likewise taken notice, including Crypto-Com, Binance and Parity.  
-Baidu SDK's for Intel's SGX <a href="https://github.com/baidu/rust-sgx-sdk">uses Rust</a>  
-Rust definitely buys you something here - and if you had to pick a Rust hill to die on, this might be the best choice.
+Buffer overflows, dangling pointers, null pointers... in Rust, these are 'handled' upstream at compile-time.  Or more fairly, the compiler's design mitigates the risk of code not explicitly marked as unsafe from exposing those vulnerabilities.  
+PA-DSS (mostly credit cards) auditors enjoy spilling application memory and picking through the contents.  Some security conscience persons in industry have recently noted precisely <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/"> that </a> The crypto/chain community has likewise taken notice, including Crypto-Com, Binance and Parity.  
+Baidu SDK's for Intel's SGX <a href="https://github.com/baidu/rust-sgx-sdk">uses Rust</a> to wrap the native libraries on the SDK.
+
+The point: Rust definitely buys you something here - and I had to pick a Rust hill to die on, this would be my choice.
 
 ### Packaging, Runtimes, and libraries 
 
-The designers got it right. Configurable runtimes, package naming, versioning, features, modules, references, etc.  It works as expected - it's dull and transparent. It's been done <a href="https://github.com/golang/go/wiki/Modules"> wrong </a> 
+The designers got it right. Halelujah, thank you.  Configurable runtimes, package naming, versioning, features, modules, references, etc.  It works as expected - it's dull and transparent. 
+Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> is not where I want to spent my productive hours.</a>  
 
-### Parallel Processing is Fearless, and with Rayon it's Crazy Easy
+### Parallel Processing is Fearless, and with Rayon (a crate in Rust lingo) it's Crazy Easy
 
+If I want to write code that limited to one core:
 
 {% highlight rust %}
 
 use rayon::prelude::*;
 
 fn sum_of_squares(input: &[i32]) -> i32 {
-    input.par_iter() // <-- just change that!
+    input.iter() 
          .map(|&i| i * i)
          .sum()
 }
 {% endhighlight %}
+
+If I want to write code that utilizes multiple cores:
+
+{% highlight rust %}
+use rayon::prelude::*;
+
+fn sum_of_squares(input: &[i32]) -> i32 {
+    input.<b>par_</b>iter() 
+         .map(|&i| i * i)
+         .sum()
+}
+{% endhighlight %}
+
+
+
 
 
