@@ -70,7 +70,7 @@ Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Module
 
 
 
-### Parallel Processing is Fearless, and with Rayon (a crate in Rust lingo) it's Crazy Easy
+### Parallel Processing is Fearless, and with Rayon - it's Crazy Easy
 --- 
 
 If I want to write code that limited to one core:
@@ -114,7 +114,7 @@ There's no unneeded formalism.  The content is linear.  There's little assumed a
 ### Getting Started - A Couple Suggestions
 ---
 
-- Rust's rising star, in search, has yet to exceed the stuff you wire-brush off your grill.  So, qualify your searches for <a href="https://www.rust-lang.org/Rust">Rust</a>.
+- Rust's rising star, at least in search, has yet to exceed the stuff you wire-brush off your grill.  So, qualify your searches for <a href="https://www.rust-lang.org/Rust">Rust</a>.
 - Follow the book in the beginning.  It pays dividends.  This is crazy unintuitive for experienced programmers - we have github - we know all sorts of loops and variables.  
 
 But, there's a main function:
@@ -142,7 +142,8 @@ fn main() {
 ### A Pinch More Motivation 
 ---
 
-- macros, generics, closures, concurrency and parallelism are important Rust features, but you can write tight Rust code without them. There's fun stuff to do as you make progress.
+- Macros, generics, closures, concurrency and parallelism are important Rust features, but you can write tight Rust code without them. There's fun stuff to do as you make progress.
+- Learning rust will make other languages clearer.  Knowning Hungarian grammar makes other grammars easy. 
 - There are many excellent crates and projects (https://github.com/rust-unofficial/awesome-rust) - too many to mention: but a top-ten, humorless, countdown:
 
 9  - <a href="https://github.com/actix/actix-web">Actix</a>  - A performant web framework   
