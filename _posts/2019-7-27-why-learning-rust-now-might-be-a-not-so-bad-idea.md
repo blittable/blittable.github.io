@@ -26,14 +26,16 @@ _Before getting into some details, a couple points_:
 - It's still not *great* for building user interfaces, doing websites, data science, and a long list of other things.  
 
 
+<br>
 ### Rust Overview
 ---
 
 Rust is a programming language and ecosystem that generates native code with the support of a couple of libraries.  So, there's a runtime, of sorts, but only via those libraries, and optional. There's no garbage collection. Memory allocation in code is enforced by the *compiler* - so Rust helps you from doing stupid things.  There's some "normally" and "usually" required by the aforesaid, but onward! 
 
-
+<br>
 ### It's <s>wicked, blisteringly</s> Fast 
 ---
+<br>
 
 IMHO, benchmarks are a bit like algorithms - it kind of depends best, worst, average - but here's <a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.html">one</a> 
 Here's another: <a href="https://www.techempower.com/benchmarks/">web server response times.</a> 
@@ -47,9 +49,7 @@ There *are* shining examples of where Rust's leading performance matter.  Here's
 
 ### It's Memory Safe  
 --- 
-<line>
-inline
-</line>
+<br>
 
 Buffer overflows, dangling pointers, null pointers... in Rust, these are 'handled' upstream at compile-time.  Or more fairly, the compiler's design mitigates the risk of code not explicitly marked as unsafe from exposing those vulnerabilities.  
 
@@ -65,17 +65,20 @@ The point: Rust definitely buys you something here - and if I had to pick a Rust
 
 
 
+<br>
 ### Packaging, Runtimes, and libraries 
 --- 
+<br>
 
 The designers got it right. Halelujah, thank you.  Configurable runtimes, package naming, versioning, features, modules, references, etc.  It works as expected - it's dull and transparent. 
 Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> go modules</a> that article is too long.  Enough said.   
 
 
 
-
+<br>
 ### Parallel Processing is Fearless, and with Rayon - it's Crazy Easy
 --- 
+<br>
 
 If I want to write code that limited to one core:
 
@@ -105,9 +108,10 @@ fn sum_of_squares(input: &[i32]) -> i32 {
 Wow.  Cool.
 
 
-
+<br>
 ### The Documentation is Excellent 
 ---
+<br>
 
 There's a learning curve, no doubt.  It takes some discipline, but going through the documentation, especially <a href="https://doc.rust-lang.org/book"> The Book</a> is a really good idea. 
 
@@ -115,8 +119,10 @@ There's no unneeded formalism.  The content is linear.  There's little assumed a
 
 
 
+<br>
 ### Getting Started - A Couple Suggestions
 ---
+<br>
 
 - Rust's rising star, at least in search, has yet to exceed the stuff you wire-brush off your grill.  So, qualify your searches for <a href="https://www.rust-lang.org/Rust">Rust</a>.
 - Follow the book in the beginning.  It pays dividends.  This is crazy unintuitive for experienced programmers - we have github - we know all sorts of loops and variables.  
@@ -143,8 +149,10 @@ fn main() {
 
 
 
+<br>
 ### A Pinch More Motivation 
 ---
+<br>
 
 - Macros, generics, closures, concurrency and parallelism are important Rust features, but you can write tight Rust code without them. There's fun stuff to do as you make progress.
 - Learning rust will make other languages clearer.  Knowning Hungarian grammar makes other grammars easy. 
@@ -169,6 +177,7 @@ fn main() {
 1  - <a href="https://github.com/BurntSushi/ripgrep">Grep Replacement</a>
 
 0  - <a href="https://github.com/firecracker-microvm/firecracker">Micro VM Framework</a>   
+<br>
 
 
 
