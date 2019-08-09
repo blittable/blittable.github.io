@@ -4,7 +4,7 @@ title: Learning Rust
 categories: Code
 ---
 
-##Learning Rust
+## Learning Rust
 
 Nationalism, religion, politics, identity... programming languages.  Tread carefully.  Let's talk about Rust. Javascript aside,
 it's been a while since I threw things while coding, and it feels, oddly, good.  I've definitively quit Rust 3 times in 4 months, but keep coming back. 
