@@ -19,7 +19,7 @@ it's been a while since I threw things while coding, and it feels, oddly, good. 
 
   true, kinda true, kinda true, that depends... OK(())
 
-Before getting into some details, a couple points: 
+_Before getting into some details, a couple points_: 
 
 - You'll need some time and motivation.
 - Rust is categorized as a *systems* programming language, but overflows the category in lots of places.  
@@ -43,9 +43,13 @@ Having said that, GO is fast. Crystal is fast.  C++ is fast.  JVM languages, dot
 There *are* shining examples of where Rust's leading performance matter.  Here's a favorite tool built in Rust that you can use regardless of your preferred coding language:  a command line grep replacement:  <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>
 
 
+<br>
 
 ### It's Memory Safe  
 --- 
+<line>
+inline
+</line>
 
 Buffer overflows, dangling pointers, null pointers... in Rust, these are 'handled' upstream at compile-time.  Or more fairly, the compiler's design mitigates the risk of code not explicitly marked as unsafe from exposing those vulnerabilities.  
 
