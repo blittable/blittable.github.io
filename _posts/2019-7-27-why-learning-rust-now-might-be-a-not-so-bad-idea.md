@@ -4,11 +4,12 @@ title: Learning Rust
 categories: Code
 ---
 
-_Hey Johnny_
+##Learning Rust
 
 Nationalism, religion, politics, identity... programming languages.  Tread carefully.  Let's talk about Rust. Javascript aside,
-it's been a while since I threw things while coding, and it feels, oddly, good.  I've definitively quit Rust 3 times in 4 months, but keep coming back. Below are some notes.        
+it's been a while since I threw things while coding, and it feels, oddly, good.  I've definitively quit Rust 3 times in 4 months, but keep coming back. 
 
+Below are some notes for Johnny - Rust Skeptic.       
 
 
 ### |move| your but(t)s
@@ -154,7 +155,7 @@ fn main() {
 <br>
 
 - Macros, generics, closures, concurrency and parallelism are important Rust features, but you can write tight Rust code without them. There's fun stuff to do as you make progress.
-- Learning rust will make other languages clearer.  Knowning Hungarian grammar makes other grammars easy.
+- Learning rust will make other languages clearer.  
 
 <line></line>
 - There are many excellent crates and projects (https://github.com/rust-unofficial/awesome-rust) - too many to mention: but a top-ten, humorless, countdown:
