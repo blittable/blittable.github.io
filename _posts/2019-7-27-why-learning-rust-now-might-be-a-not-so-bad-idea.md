@@ -101,7 +101,7 @@ There's no unneeded formalism.  The content is linear.  There's little assumed a
 ### Getting Started - A Couple Suggestions
 ---
 
-- Rust's rising star, in search, has yet to exceed the stuff you wire-brush off your grill.  So, qualify your searches for <a https://www.rust-lang.org/Rust> Rust</a>.
+- Rust's rising star, in search, has yet to exceed the stuff you wire-brush off your grill.  So, qualify your searches for <a href="https://www.rust-lang.org/Rust">Rust</a>.
 - Follow the book in the beginning.  It pays dividends.  This is crazy unintuitive for experienced programmers - we have github - we know all sorts of loops and variables.  
 
 But, there's a main function:
