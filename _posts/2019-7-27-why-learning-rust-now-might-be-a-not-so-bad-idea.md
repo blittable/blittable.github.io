@@ -68,17 +68,15 @@ The point: Rust definitely buys you something here - and if I had to pick a Rust
 <br>
 ### Packaging, Runtimes, and libraries 
 --- 
-<br>
 
 The designers got it right. Halelujah, thank you.  Configurable runtimes, package naming, versioning, features, modules, references, etc.  It works as expected - it's dull and transparent. 
-Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> go modules</a> that article is too long.  Enough said.   
+Not to pick on lovely GO, but: <a href="https://github.com/golang/go/wiki/Modules"> go modules</a>: that article is too long.  Enough said.   
 
 
 
 <br>
 ### Parallel Processing is Fearless, and with Rayon - it's Crazy Easy
 --- 
-<br>
 
 If I want to write code that limited to one core:
 
@@ -111,7 +109,6 @@ Wow.  Cool.
 <br>
 ### The Documentation is Excellent 
 ---
-<br>
 
 There's a learning curve, no doubt.  It takes some discipline, but going through the documentation, especially <a href="https://doc.rust-lang.org/book"> The Book</a> is a really good idea. 
 
@@ -155,7 +152,9 @@ fn main() {
 <br>
 
 - Macros, generics, closures, concurrency and parallelism are important Rust features, but you can write tight Rust code without them. There's fun stuff to do as you make progress.
-- Learning rust will make other languages clearer.  Knowning Hungarian grammar makes other grammars easy. 
+- Learning rust will make other languages clearer.  Knowning Hungarian grammar makes other grammars easy.
+
+<line></line>
 - There are many excellent crates and projects (https://github.com/rust-unofficial/awesome-rust) - too many to mention: but a top-ten, humorless, countdown:
 
 9  - <a href="https://github.com/actix/actix-web">Actix</a>  - A performant web framework   
