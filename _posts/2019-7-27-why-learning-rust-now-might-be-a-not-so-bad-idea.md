@@ -104,12 +104,12 @@ fn main() {
 
 ### A Pinch More Motivation 
 
-- macros, generics, closures, concurrency and parallelism are features, but you can write tight Rust code without them. There's fun stuff to do without complete mastery of the language.
+- macros, generics, closures, concurrency and parallelism are important Rust features, but you can write tight Rust code without them. There's fun stuff to do as you make progress.
 - There are many excellent crates, too many to mention: but a top-ten, humorless, countdown:
 
 9  -   
 8  -  
-7  - <a href="https://github.com/rustsim/nalgebra"> nalgebra </a> - Linear algebra library and some eye-pleasing code 
+7  - <a href="https://github.com/rustsim/nalgebra"> nalgebra </a> - Linear algebra library and some eye-pleasing, well-structured code 
 6  - <a href="https://github.com/BurntSushi/xsv"> xsv </a> - You'll never look at a csv file the same way again. 
 5  - <a href="https://docs.rs/crate/criterion/0.2.11"> Criterion </a> - statistical benchmarking library with intelligent function sampling and awesome charts/reporting.  
 4  - <a href="https://github.com/crossbeam-rs/crossbeam"> Crossbeam </a> - Concurrent programming primitives and tools     
